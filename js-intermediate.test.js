@@ -10,6 +10,12 @@ describe("multTwo", () => {
         expect(multTwo([4.5, -4.5, 12])).toEqual([9, -9, 24])
     })
 })
+const multTwo = (array => {
+  return array.map((value) => {
+    return value *2
+  })
+})
+console.log(multTwo());
 
 
 // 2. Write the code that would make this test pass.
@@ -24,3 +30,7 @@ describe("greeter", () => {
     expect(greeter(person3)).toEqual("Hello, Pop!")
   })
 })
+const greeter = (person) => {
+  return `Hello, ${person}!`
+}
+console.log(greeter());
